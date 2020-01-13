@@ -1,3 +1,9 @@
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Cambria, Cochin, Georgia, serif;
   color: #414141;
@@ -19,6 +25,8 @@ h2 {
   margin-top: 30px;
 }
 
+/* Page Styling */
+
 .page {
   max-width: 800px;
   margin: 0 auto;
@@ -33,11 +41,50 @@ h2 {
   font-size: 0.9em;
 }
 
-a:link, a:visited {
+/* Link Styling */
+
+a {
   color: lightcoral;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  background-color: #e9e9e9;
+  overflow: hidden;
+}
+
+.navbar li {
+  text-align: center;
+  float: left;
+  /* background-color: #e9e9e9;
+  border: 1px solid #919191; */
+}
+
+/* .navbar li:not(:first-of-type) {
+  border-left: none;
+} */
+
+.navbar a {
+  display: block;
+  padding: 8px;
+  color: #414141;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #bebebe;
+}
+
+.navbar a.active {
+  background-color: lightsteelblue;
 }
