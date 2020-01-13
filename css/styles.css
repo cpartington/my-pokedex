@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: Cambria, Cochin, Georgia, serif;
+  font-family: 'PT Serif', serif;
   color: #414141;
   font-size: 18px;
+  line-height: 1.5em;
 }
 
 hr {
