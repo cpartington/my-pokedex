@@ -1,0 +1,46 @@
+.header {
+  background-color: lightsteelblue;
+  text-align: center;
+}
+
+.content p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .body {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) {
+  .header {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .header h1 {
+    font-size: 2.5em;
+  }
+
+  .blog-item {
+    width: 47%;
+    padding-bottom: 0;
+  }
+  
+  .blog-item p {
+    font-size: 0.9em;
+  }
+}
