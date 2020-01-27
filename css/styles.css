@@ -27,20 +27,6 @@ h3 {
   font-size: 1.3em;
 }
 
-.centered {
-  text-align: center;
-}
-
-.subtitle {
-  font-style: italic;
-  font-size: 1.1em;
-}
-
-.note {
-  font-style: italic;
-  font-size: 0.9em;
-}
-
 /* Navbar */
 .navbar {
   color: #414141 !important;
@@ -61,6 +47,20 @@ h3 {
   max-width: 800px;
   margin: 10px auto;
   margin-top: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 /* Link Styling */
@@ -103,5 +103,9 @@ a:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
+  }
+
+  .page {
+    margin-bottom: 75px;
   }
 }
