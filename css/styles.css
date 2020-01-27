@@ -29,11 +29,26 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
+/* Navbar */
+.navbar {
+  color: #414141 !important;
+  justify-content: center !important;
+}
+
+.bg-light {
+  background-color: lightsteelblue !important;
+}
+
+.brand-icon {
+  height: 25px;
+}
+
 /* Page Styling */
 
 .page {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 10px auto;
+  margin-top: 0;
 }
 
 /* Link Styling */
