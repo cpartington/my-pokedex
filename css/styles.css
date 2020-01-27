@@ -15,6 +15,18 @@ h1, h2, h3 {
   line-height: 1.3em;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
 .centered {
   text-align: center;
 }
@@ -60,4 +72,36 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: lightsteelblue;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer a {
+  color: #414141;
+}
+
+.footer p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 40px) {
+  .body {
+    font-size: 16px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 451px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
