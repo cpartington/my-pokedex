@@ -3,32 +3,38 @@
   <head>
     <meta charset='UTF-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-    <title>Cute Pokémon</title>
+    
     <link rel='stylesheet' href='/css/styles.css'/>
-    <link rel='stylesheet' href='/css/sample-page.css'/>
+    <link rel='stylesheet' href='/css/blog-page.css'/>
+    <link rel="stylesheet" href="/css/image-grid.css"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap" rel="stylesheet">
+    
+    <title>Cute Pokémon</title>
   </head>
+
   <body>
     <div class='page'>
-      <ul class='navbar'>
-        <li><a href='/'>Home</a></li>
-        <li><a href='/pages/pokemon-lists.html'>Pokémon Lists</a></li>
-        <li><a class='active' href='/pages/cute-pokemon.html'>Pokémon Images</a></li>
-        <li><a href='/dex-files.html'>Pokédex Files</a></li>
-      </ul>
 
       <h1>Cute Pokémon</h1>
-      <p class='note'>More pokémon will be added in the future.</p>
+      <p class='note'>A growing list of the cutest pokémon in Sword &amp; Shield.</p>
 
-      <hr/>
+      <div class="image-container">
+        <div class="image-item">
+          <img src="/images/wooloo.png"/>
+          <p>Wooloo</p>
+        </div>
+        <div class="image-item">
+          <img src="/images/yamper.png"/>
+          <p>Yamper</p>
+        </div>
+        <div class="image-item">
+          <img src="/images/vulpix.png"/>
+          <p>Vulpix</p>
+        </div>
+      </div>
 
-      <img src='/images/wooloo.png' width='200' alt='Wooloo'/>
-      <img src='/images/yamper.png' width='200' alt='Yamper'/>
-      <img src='/images/vulpix.png' width='200' alt='Vulpix'/>
+      <p class='note'>&larr; <a href='/lists-home.html'>Back to pokémon lists</a></p>
 
-      <hr/>
-
-      <p class='note'>&larr; <a href='pokemon-lists.html'>Back to pokémon lists</a></p>
     </div>
   </body>
 </html>

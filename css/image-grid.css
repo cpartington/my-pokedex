@@ -1,0 +1,16 @@
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.2em 0;
+}
+
+.image-item img {
+  width: 200px;
+}
+
+.image-item p {
+  font-size: 0.9em;
+  text-align: center;
+}

@@ -72,7 +72,7 @@
 
   .blog-item {
     width: 47%;
-    padding-bottom: 0;
+    padding-bottom: 1em;
   }
   
   .blog-item p {
