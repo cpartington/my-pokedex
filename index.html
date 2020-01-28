@@ -3,37 +3,67 @@
   <head>
     <meta charset='UTF-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-    <title>My Pokédex</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel='stylesheet' href='/css/styles.css'/>
-    <link rel='stylesheet' href='/css/sample-page.css'/>
+    <link rel='stylesheet' href='/css/blog-home.css'/>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap" rel="stylesheet">
+    
+    <title>My Pokédex</title>
   </head>
+  
   <body>    
-    <div class='page'>
-      <ul class='navbar'>
-        <li><a class='active' href='/'>Home</a></li>
-        <li><a href='/pages/pokemon-lists.html'>Pokémon Lists</a></li>
-        <li><a href='/pages/cute-pokemon.html'>Pokémon Images</a></li>
-        <li><a href='/dex-files.html'>Pokédex Files</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/"><img class="brand-icon" src="/images/eevee-icon.png"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/lists-home.html">Pokémon Lists</a>
+          <a class="nav-item nav-link" href="/dex-files.html">Pokédex Files</a>
+        </ul>
+      </div>
+    </nav>
 
+    <div class="header">
       <h1>My Pokédex</h1>
-
-      <p class='note'>This website is the future home of my creative project, but for now it's a stub and very meme-y. Enjoy.</p>
-
-      <hr/>
-
-      <h2 id='about'>About</h2>
-
-      <p>I have never been an avoid pokémon trainer, but that changed December 2019. My brother convinced me to buy Pokémon Sword &amp; Shield. I owned Let&rsquo;s Go Eevee at the time and wasn&rsquo;t particularly interested, but I did it anyway. And now I'm way too into it.</p>
-
-      <p>My goal is to catch them all, but especially the cute ones.</p>
-
-      <h2 id='get-started'>Get Started</h2>
-
-      <p>Get started by visiting the <a href='/pages/pokemon-lists.html'>pokémon lists</a> page or jump straight to the <a href='/pages/cute-pokemon.html'>cute pokémon</a> image page.</p>
-
-      <p>There will be a lot more to do here eventually.</p>
+      <p class="subtitle">Home of my pokémon adventures</p>
     </div>
+
+    <div class='page'>
+      <div class="content">
+
+        <p>I have never been an avoid pokémon trainer, but that changed December 2019 when my brother convinced me to buy Pokémon Sword &amp; Shield. I owned Let&rsquo;s Go Eevee at the time and wasn&rsquo;t particularly interested, but I did it anyway. And now I'm way too into it.</p>
+
+        <p>My goal is to catch them all, but especially the cute ones.</p>
+
+        <h2 id='get-started' class="centered">Get Started</h2>
+
+        <div class="blog-grid">
+          <div class="blog-item">
+            <h3><a href="/lists-home.html">Pokémon Lists</a></h3>
+            <p>The home of all my pokémon compilations and judgments</p>
+          </div>
+          <div class="blog-item">
+            <h3><a href="/dex-files.html">Pokédex Files</a></h3>
+            <p>The home of my adventures while catching them all</p>
+          </div>
+        </div>
+        
+        <p class="note">In the future, this website intends to keep track of caught Sword &amp; Shield pokémon. For now, it just keeps track of my adventures and opinions.</p>
+      
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><a href="https://github.com/cpartington/my-pokedex" target="blank">Github Repository</a></p>
+    </div>
+
+    <!-- Bootstrap Mobile Menu Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>

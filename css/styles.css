@@ -1,5 +1,4 @@
-/* General Styling */
-
+/* General */
 * {
   box-sizing: border-box;
 }
@@ -13,6 +12,39 @@ body {
 
 h1, h2, h3 {
   line-height: 1.3em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+/* Navbar */
+.navbar {
+  color: #414141 !important;
+  justify-content: center !important;
+}
+
+.bg-light {
+  background-color: lightsteelblue !important;
+}
+
+.brand-icon {
+  height: 25px;
+}
+
+/* Page */
+.page {
+  max-width: 800px;
+  margin: 10px auto;
+  margin-top: 0;
 }
 
 .centered {
@@ -29,15 +61,23 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
-/* Page Styling */
-
-.page {
-  max-width: 800px;
-  margin: 0 auto;
+/* Footer */
+.footer {
+  background-color: lightsteelblue;
+  padding: 15px;
+  text-align: center;
 }
 
-/* Link Styling */
+.footer a {
+  color: #414141;
+}
 
+.footer p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* Link */
 a {
   color: lightcoral;
   text-decoration: none;
@@ -45,4 +85,24 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Mobile */
+@media only screen and (max-width: 40px) {
+  .body {
+    font-size: 16px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 451px) {
+  .page {
+    margin-bottom: 75px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
