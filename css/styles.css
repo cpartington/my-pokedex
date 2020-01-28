@@ -1,5 +1,4 @@
 /* General */
-
 * {
   box-sizing: border-box;
 }
@@ -27,6 +26,20 @@ h3 {
   font-size: 1.3em;
 }
 
+/* Navbar */
+.navbar {
+  color: #414141 !important;
+  justify-content: center !important;
+}
+
+.bg-light {
+  background-color: lightsteelblue !important;
+}
+
+.brand-icon {
+  height: 25px;
+}
+
 /* Page */
 .page {
   max-width: 800px;
@@ -46,6 +59,22 @@ h3 {
 .note {
   font-style: italic;
   font-size: 0.9em;
+}
+
+/* Footer */
+.footer {
+  background-color: lightsteelblue;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer a {
+  color: #414141;
+}
+
+.footer p {
+  font-size: 0.8em;
+  margin: 0;
 }
 
 /* Link */
@@ -69,5 +98,11 @@ a:hover {
 @media only screen and (min-width: 451px) {
   .page {
     margin-bottom: 75px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

@@ -1,17 +1,3 @@
-/* Navbar */
-.navbar {
-  color: #414141 !important;
-  justify-content: center !important;
-}
-
-.bg-light {
-  background-color: lightsteelblue !important;
-}
-
-.brand-icon {
-  height: 25px;
-}
-
 /* Header */
 .header {
   background-color: lightsteelblue;
@@ -48,22 +34,6 @@
   margin: 1.2em 0;
 }
 
-/* Footer */
-.footer {
-  background-color: lightsteelblue;
-  padding: 15px;
-  text-align: center;
-}
-
-.footer a {
-  color: #414141;
-}
-
-.footer p {
-  font-size: 0.8em;
-  margin: 0;
-}
-
 /* Desktop */
 @media only screen and (min-width: 451px) {
   .header h1 {
@@ -77,11 +47,5 @@
   
   .blog-item p {
     font-size: 0.9em;
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
   }
 }
