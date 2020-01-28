@@ -31,3 +31,7 @@ h2 {
 .next {
   margin-left: auto;
 }
+
+.previous {
+  margin-right: auto;
+}
