@@ -6,6 +6,6 @@ url=https://www.serebii.net/swordshield/pokemon/
 inc=0
 
 while [ $inc -lt ${#files[@]} ]; do
-  wget -q $url${files[$inc]} -O ${files[$inc+1]} -P ../images
+  wget -q $url${files[$inc]} -O ../images/${files[$inc+1]}
   let inc+=2
 done
