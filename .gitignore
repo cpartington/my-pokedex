@@ -2,4 +2,4 @@
 .vscode
 
 # Images
-*.png
+images/
