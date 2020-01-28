@@ -7,10 +7,27 @@ hr {
 }
 
 h1 {
-  color: lightsteelblue;
+  color: #73869e;
+  font-weight: bold;
   margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 h2 {
   margin-top: 30px;
+}
+
+.nav-tip {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 1.5em;
+}
+
+.story-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next {
+  margin-left: auto;
 }
