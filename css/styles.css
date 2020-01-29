@@ -42,8 +42,6 @@ h3 {
 
 /* Page */
 .page {
-  max-width: 800px;
-  margin: 10px auto;
   margin-top: 0;
 }
 
@@ -88,15 +86,21 @@ a:hover {
 }
 
 /* Mobile */
-@media only screen and (max-width: 40px) {
+@media only screen and (max-width: 450px) {
   .body {
     font-size: 16px;
+  }
+
+  .page {
+    margin: 10px;
   }
 }
 
 /* Desktop */
 @media only screen and (min-width: 451px) {
   .page {
+    max-width: 800px;
+    margin: 10px auto;
     margin-bottom: 75px;
   }
 
