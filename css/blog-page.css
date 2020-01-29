@@ -26,12 +26,26 @@ h2 {
 .story-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.next {
-  margin-left: auto;
+.story-nav-item {
+  display: flex;
+  width: 33%;
 }
 
-.previous {
-  margin-right: auto;
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.nav-icon {
+  height: 100px;
 }
