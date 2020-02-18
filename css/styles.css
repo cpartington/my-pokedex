@@ -1,10 +1,10 @@
 /* General */
 * {
   box-sizing: border-box;
+  font-family: 'PT Serif', serif;
 }
 
 body {
-  font-family: 'PT Serif', serif;
   color: #414141;
   font-size: 18px;
   line-height: 1.8em;

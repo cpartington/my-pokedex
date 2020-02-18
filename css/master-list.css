@@ -1,0 +1,34 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: lightcoral;
+}
+
+.more-info-button {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: lightcoral;
+}
+
+.pokemon-img {
+  height: 150px;
+}
+
+.pokemon-type {
+  display: inline;
+}
+
+.info-container {
+  text-align: left;
+}
