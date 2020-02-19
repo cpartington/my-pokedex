@@ -21,14 +21,24 @@ th {
   color: lightcoral;
 }
 
-.pokemon-img {
-  height: 150px;
-}
-
 .pokemon-type {
   display: inline;
 }
 
 .info-container {
   text-align: left;
+}
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+  .pokemon-img {
+    height: 100px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 451px) {
+  .pokemon-img {
+    height: 150px;
+  }
 }

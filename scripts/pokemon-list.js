@@ -6,7 +6,7 @@
   let table_html = "<table>"
 
   table_html += "<tr>"
-  table_html += "<th>Number</th>"
+  table_html += "<th>No.</th>"
   table_html += "<th>Picture</th>"
   table_html += "<th>Name</th>"
   table_html += "<th>Caught</th>"
@@ -15,7 +15,7 @@
 
   for (let item of pokemon) {
     table_html += "<tr>"
-    table_html += `<td>${item.ss_id}</td>`
+    table_html += `<td>#${item.ss_id.toString().padStart(3, '0')}</td>`
     table_html += `<td><img class="pokemon-img" src="/images/${item.name.toLowerCase()}.png"/></td>`
     table_html += `<td>${item.name}</td>`
     table_html += `<td>${item.caught}</td>`
