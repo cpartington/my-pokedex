@@ -6,7 +6,7 @@
   let table_html = "<table>"
 
   table_html += "<tr>"
-  table_html += "<th>No.</th>"
+  table_html += "<th></th>"
   table_html += "<th>Picture</th>"
   table_html += "<th>Name</th>"
   table_html += "<th>Caught</th>"

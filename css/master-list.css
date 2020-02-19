@@ -31,6 +31,12 @@ th {
 
 /* Mobile */
 @media only screen and (max-width: 450px) {
+  .pokemon-table {
+    max-width: 450px;
+    overflow-x: auto;
+    display: block;
+  }
+  
   .pokemon-img {
     height: 100px;
   }
