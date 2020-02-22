@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel='stylesheet' href='/css/styles.css'/>
     <link rel='stylesheet' href='/css/blog-home.css'/>
+    <link rel="stylesheet" href="/css/master-list.css"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap" rel="stylesheet">
     
-    <title>My Pokédex</title>
+    <title>The Master List</title>
   </head>
   
   <body>    
@@ -29,36 +30,18 @@
 
     <div class="header">
       <h1>My Pokédex</h1>
-      <p class="subtitle">Home of my tongue-in-cheek pokémon adventures</p>
+      <p class="subtitle">All* the Sword &amp; Shield Pokémon's stat information and caught status</p>
     </div>
 
     <div class='page'>
       <div class="content">
 
-        <p>I have never been an avoid pokémon trainer, but that changed December 2019 when my brother convinced me to buy Pokémon Sword &amp; Shield. I owned Let&rsquo;s Go Eevee at the time and wasn&rsquo;t particularly interested, but I did it anyway. And now I'm way too into it.</p>
-
-        <p>My goal is to catch them all, but especially the cute ones.</p>
-
-        <h2 id='get-started' class="centered">Get Started</h2>
-
-        <div class="blog-grid">
-          <div class="blog-item-small">
-            <div>
-              <h3><a href="/lists-home.html">Pokémon Lists</a></h3>
-              <p>My pokémon compilations and judgments</p>
-            </div>
-          </div>
-          <div class="blog-item-small">
-            <div>
-              <h3><a href="/dex-files.html">Pokédex Files</a></h3>
-              <p>My attempts to catch them all</p>
-            </div>
-          </div>
-        </div>
-        
-        <p class="note">In the future, this website intends to keep track of caught Sword &amp; Shield pokémon. For now, it just keeps track of my adventures and opinions.</p>
+      <div id="pokemon-table"></div>
       
       </div>
+
+      <p class="note">* Not actually all the pokémon.</p>
+      <p class="note">** Unfortunately, PokéAPI does not include the new Sword &amp; Shield pokémon. Thus extra information is only available for previously-existing pokémon.</p>
     </div>
 
     <div class="footer">
@@ -69,5 +52,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="/json/pokemon-list.json"></script>
+    <script src='/scripts/pokemon-list.js'></script>
   </body>
 </html>

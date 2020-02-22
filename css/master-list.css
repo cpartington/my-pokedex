@@ -21,10 +21,6 @@ th {
   color: lightcoral;
 }
 
-.pokemon-type {
-  display: inline;
-}
-
 .list-header-p {
   margin-bottom: 0 !important;
 }
@@ -34,11 +30,12 @@ th {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pokemon-info-item:not(:last-of-type) {
   margin-right: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .pokemon-sprite {
@@ -52,7 +49,7 @@ th {
 
 /* Mobile */
 @media only screen and (max-width: 450px) {
-  .pokemon-table {
+  #pokemon-table {
     max-width: 450px;
     overflow-x: auto;
     display: block;
@@ -60,6 +57,10 @@ th {
   
   .pokemon-img {
     height: 100px;
+  }
+
+  .pokemon-type {
+    order: -1;
   }
 }
 

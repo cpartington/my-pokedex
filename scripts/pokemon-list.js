@@ -10,7 +10,7 @@
   table_html += "<th>Picture</th>"
   table_html += "<th>Name</th>"
   table_html += "<th>Caught</th>"
-  table_html += "<th>More Info</th>"
+  table_html += "<th>More Info**</th>"
   table_html += "</tr>"
 
   for (let item of pokemon) {
@@ -66,10 +66,10 @@ function addMoreInfoListener(item) {
           pokemon_html += "</div>"
           
           // Type
-          pokemon_html += "<div class='pokemon-info-item'>"
+          pokemon_html += "<div class='pokemon-info-item pokemon-type'>"
           pokemon_html += "<p>Type: "
           for (let type of json.types) {
-            pokemon_html += `<img class="pokemon-type" src="/images/types/${type.type.name}.gif"/> `
+            pokemon_html += `<img src="/images/types/${type.type.name}.gif"/> `
           }
           pokemon_html += "</p>"
 
@@ -88,11 +88,13 @@ function addMoreInfoListener(item) {
           pokemon_html += "<div class='pokemon-info-item'>"
           if (json.sprites.front_female != null) first_form_header = "Male Form"
           else first_form_header = "Default Form"
+          
           pokemon_html += `<p class="list-header-p">${first_form_header}:</p>`
           pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_default}'/>`
           if (json.sprites.back_default != null)
             pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.back_default}'/>`
           pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_shiny}'/>`
+          
           if (json.sprites.front_female != null) {
             pokemon_html += "<p class='list-header-p'>Female Form:</p>"
             pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_female}'/>`
@@ -105,7 +107,6 @@ function addMoreInfoListener(item) {
 
           info_div.innerHTML = pokemon_html
           more_info.innerHTML = "-"
-          console.log('more_info innerHTML: ' + more_info.innerHTML)
         })
     } else {
       info_div.innerHTML = ""
