@@ -25,8 +25,29 @@ th {
   display: inline;
 }
 
-.info-container {
+.list-header-p {
+  margin-bottom: 0 !important;
+}
+
+.pokemon-info-container {
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pokemon-info-item:not(:last-of-type) {
+  margin-right: 3em;
+  margin-bottom: 2em;
+}
+
+.pokemon-sprite {
+  height: 96px;
+}
+
+.note {
+  font-style: normal;
+  font-size: 0.8em;
 }
 
 /* Mobile */

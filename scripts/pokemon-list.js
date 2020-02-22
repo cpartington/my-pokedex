@@ -53,14 +53,53 @@ function addMoreInfoListener(item) {
           return response.json();
         }).then(function(json) {
           let pokemon_html = "<td></td><td colspan='4'>"
-          pokemon_html += "<div class='info-container'>"
+          pokemon_html += "<div class='pokemon-info-container'>"
+
+          // Base stats
+          pokemon_html += "<div class='pokemon-info-item'>"
+          pokemon_html += "<p class='list-header-p'>Base Stats:</p>"
+          pokemon_html += "<ul>"
+          for (let stat of json.stats) {
+            pokemon_html += `<li>${stat.stat.name}: ${stat.base_stat}</li>`
+          }
+          pokemon_html += "</ul>"
+          pokemon_html += "</div>"
           
-          // Get type
+          // Type
+          pokemon_html += "<div class='pokemon-info-item'>"
           pokemon_html += "<p>Type: "
           for (let type of json.types) {
             pokemon_html += `<img class="pokemon-type" src="/images/types/${type.type.name}.gif"/> `
           }
           pokemon_html += "</p>"
+
+          // Abilities
+          pokemon_html += "<p class='list-header-p'>Abilities:</p>"
+          pokemon_html += "<ul>"
+          for (let ability of json.abilities) {
+            pokemon_html += `<li>${ability.ability.name}`
+            if (ability.is_hidden) pokemon_html += " <span class='note'>(hidden)</span>"
+            pokemon_html += "</li>"
+          }
+          pokemon_html += "</ul>"
+          pokemon_html += "</div>"
+
+          // Shiny
+          pokemon_html += "<div class='pokemon-info-item'>"
+          if (json.sprites.front_female != null) first_form_header = "Male Form"
+          else first_form_header = "Default Form"
+          pokemon_html += `<p class="list-header-p">${first_form_header}:</p>`
+          pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_default}'/>`
+          if (json.sprites.back_default != null)
+            pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.back_default}'/>`
+          pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_shiny}'/>`
+          if (json.sprites.front_female != null) {
+            pokemon_html += "<p class='list-header-p'>Female Form:</p>"
+            pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_female}'/>`
+            pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.back_female}'/>`
+            pokemon_html += `<img class="pokemon-sprite" src='${json.sprites.front_shiny_female}'/>`
+          }
+          pokemon_html += "</div>"
 
           pokemon_html += "</div></td>"
 
